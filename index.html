@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <script defer src="./asstes/js/main.js"></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- link personali -->
+        <link rel="stylesheet" href="./asstes/css/style.css">
+        <script defer src="./asstes/js/main.js"></script>
+        <!-- link bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <section id="calculate">
+            <div class="container text-center my-5">
+                <div class="row">
+                    <h2 class="text-uppercase">calcola il prezzo del tuo biglietto</h2>
+                    <div class="col-4">
+                        <label for="full_name">Nome Cognome</label>
+                        <input type="text" id="full_name" class="form-control">
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        <label for="distance">Km da percorrere</label>
+                        <input type="text" id="distance" class="form-control">
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        <label for="age">Fascia d'età</label>
+                        <select name="" id="age" class="form-select">
+                            <option value="17">Minorenne</option>
+                            <option value="19">Maggiorenne</option>
+                            <option value="66">Over 65</option>
+                        </select>
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-12 my-4">
+                        <button type="submit" id="submit" class="btn btn-secondary">Genera</button>
+                        <button type="reset" id="res" class="btn btn-secondary">Annulla</button>
+                    </div>
+                    <!-- /.col-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#calculate -->
+
+        <section id="own_ticket">
+            <div class="container text-center my-5">
+                <div class="row">
+                    <h2 class="text-uppercase">il tuo biglietto</h2>
+                    <div class="col-3 border border-3 border-start-0 border-dark">
+                        <h4 class="text-uppercase">nome passeggero</h4>
+                        <span id="passenger_name"></span>
+                    </div>
+
+                    <div class="col-9 border border-dark border-3 border-start-0 border-end-0">
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">Offerta</th>
+                                <th scope="col">Carrozza</th>
+                                <th scope="col">Codice CP</th>
+                                <th scope="col">Costo biglietto</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                              <tr>
+                                <td id="discount"></td>
+                                <td id="carriage"></td>
+                                <td id="code"></td>
+                                <td id="ticket_price"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#own_ticket -->
+
+    </body>
 </html>
